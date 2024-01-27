@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="ht">Tree Cover in India</div>
+            <div class="prompt">(Responsive, but better viewed on desktop on a modern browser)</div>
+        </div>
+        <br>
+        <div class="mainpage">
+            <div class="left">
+              <div class="left-text">
+                <p>Thanks for coming by! The raw data for this visualization is taken from the Government of India Open Government Data (OGD) <a href="https://data.gov.in/catalog/stateut-wise-tree-cover-estimates">website</a>. The tree cover is estimated biennially and hence you see data from 2009, 2011 and 2013. There is no data after 2013. You can click the buttons below to see the statewise area under tree cover. The numbers beneath the state or union territory short name indicate the area in sq. km.</p>
+                <p>I used a bunch of tools and techniques to make this viz. CSS flexbox, GeoJSON parsers, online color palettes etc. (did you spot that pun?) and I will be blogging soon about the process I followed. It was an amazing learning experience for me! In future, this could possibly have a gradient map and percentage values.</p>
+              </div>
+                <div class="buttons">
+                    <div data-year="2009" class="button">Year 2009</div>
+                    <div data-year="2011" class="button">Year 2011</div>
+                    <div data-year="2013" class="button">Year 2013</div>
+                </div>
+            </div>
+            <div class="map"></div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="/web-projects/treecover-india/js/main.js"></script>
+    <!-- <script>
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));
+    //]]>
+    </script> -->
+</body>
+
+</html>

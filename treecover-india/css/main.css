@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+html {
+    color: #222;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+path.states {
+    fill: #fff;
+    stroke-width: 0.8px;
+    stroke: grey;
+}
+
+.circles {
+    fill: #6CB575;
+    fill-opacity: 0.3;
+    stroke: #CCDFD2;
+}
+
+/*desktop*/
+@media only screen and (min-width: 500px) {
+    .button {
+        padding: 1vw;
+        margin: 1vh;
+        /*background-color: #dcdcdc;*/
+        border: 1px solid #6CB575;
+        color: #6CB575;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 50px;
+        /* media query*/
+        /*min-width: 40vw;*/
+        /*desktop*/
+        width: 12vw;
+        height: 1vw;
+        text-align: center;
+        line-height: 1vw;
+    }
+    .map {
+        max-width: 50vw;
+        /*border: 1px solid #6CB575;*/
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inconsolata', monospace;
+        width: 99vw;
+        /*border: 1px solid black;*/
+    }
+    .ht {
+      /*border: 1px solid black;*/
+        font-size: 4rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .mainpage {
+        /*border: 1px solid black;*/
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      /*border: 1px solid black;*/
+        width: 30vw;
+        text-align: justify;
+    }
+    .left-text {
+      /*border: 1px solid red;*/
+      width: 30vw;
+      width: 30vw;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /*justify-content: center;*/
+        /*border: 1px solid #6CB575;*/
+        text-align: justify;
+
+        /*max-width: 80vw;*/
+        /*desktop*/
+        width: 30vw;
+        /*padding-top: 15vh;*/
+    }
+    .prompt {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width: 500px) {
+    .button {
+        padding: 1vw;
+        margin: 1vh;
+        /*background-color: #dcdcdc;*/
+        border: 1px solid #6CB575;
+        color: #6CB575;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 50px;
+        /* media query*/
+        /*min-width: 40vw;*/
+        /*desktop*/
+        width: 50vw;
+        height: 8vw;
+        border: 1px solid #6CB575;
+        text-align: center;
+        line-height: 1.9;
+    }
+    .map {
+        width: 100vw;
+        /*border: 1px solid #6CB575;*/
+    }
+    .prompt {
+        text-align: center;
+        padding-top: 0.3rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inconsolata', monospace;
+    }
+    .ht {
+        font-size: 2rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .mainpage {
+        display: flex;
+        /*border: 1px solid #6CB575;*/
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .left {
+        width: 90vw;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: justify;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /*justify-content: center;*/
+        /*border: 1px solid #6CB575;*/
+        text-align: justify;
+        /*mobile*/
+        /*max-width: 80vw;*/
+        /*desktop*/
+        width: 90vw;
+        /*padding-top: 15vh;*/
+    }
+}
+
+.button:hover {
+    background-color: #6CB575;
+    color: #F5F0F8;
+}
+
+a {
+    color: #6CB575;
+}
+
+a:hover {
+    color: #5D917C;
+}

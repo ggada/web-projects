@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Working Man';
+  src: url("./rushfonts/WorkingMan.eot"); /* EOT file for IE */
+  src: local('Working Man'),
+  url('./rushfonts/WorkingMan.ttf') format('truetype');  /* TTF file for CSS3 browsers */
+}
+
+
+html {
+  font-size: 10px;
+  background:url(http://i.imgur.com/ui4VTFK.jpg) top center;
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Working Man';*/
+}
+.keys {
+  display:flex;
+  flex:1;
+  min-height:100vh;
+  align-items: center;
+  justify-content: center;
+}
+.playing {
+  transform:scale(1.1);
+  border-color: #ff6400;
+  box-shadow: 0 0 10px #ff6400
+}
+.key {
+  border:4px solid black;
+  border-radius:5px;
+  margin:1rem;
+  font-size: 1.5rem;
+  padding:1rem .5rem;
+  transition:all .07s;
+  width:100px;
+  text-align: center;
+  color:white;
+  background:rgba(0,0,0,0.4);
+  text-shadow:0 0 5px black;
+}
+
+kbd {
+  font-family: 'Working Man', sans-serif;
+  display: block;
+  font-size: 40px;
+}
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:#ffc600;
+}
